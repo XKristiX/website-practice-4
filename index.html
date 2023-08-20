@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Impressive Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Your Name</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="about-text">
+          <h3>Hello there, I'm [Your Name]!</h3>
+          <p>Welcome to my digital realm where creativity and coding collide. I'm on an exhilarating journey through the We Can Code IT bootcamp, diving headfirst into the world of full-stack development. But that's not all—my passions extend far beyond the bootcamp's virtual walls.</p>
+          <p>When I'm not immersed in coding challenges, I'm channeling my creative energy into two captivating pursuits: Unreal Engine and Blender. I'm a firm believer in crafting dynamic user experiences, and that's why I'm honing my skills in these tools to give life to captivating video game worlds.</p>
+          <p>Whether it's scripting engaging gameplay or sculpting intricate 3D models, I'm all in. The combination of logic-driven coding and visually stunning design ignites my imagination, and I'm thrilled to see my projects come to life bit by bit.</p>
+          <p>Being a part of the We Can Code IT bootcamp has ignited my passion for coding in ways I never thought possible. I'm learning to build powerful websites and applications, each line of code a stepping stone towards creating impactful digital experiences.</p>
+          <p>Connect with me through [email/social media], and let's share insights, collaborate on projects, or just geek out about game development. Join me as I navigate the exhilarating waters of coding, game design, and everything in between!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-box">
+          <h3>HTML5 & CSS3</h3>
+        </div>
+        <div class="skill-box">
+          <h3>JavaScript & ES6</h3>
+        </div>
+        <div class="skill-box">
+          <h3>Responsive Web Design</h3>
+        </div>
+        <div class="skill-box">
+          <h3>UI/UX Design Principles</h3>
+        </div>
+        <div class="skill-box">
+          <h3>Front-end Frameworks (React, Vue)</h3>
+        </div>
+        <div class="skill-box">
+          <h3>Version Control (Git)</h3>
+        </div>
+        <div class="skill-box">
+          <h3>Spring JPA / SpringBoot</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="project">
+        <img src="project1.jpg" alt="Project 1">
+        <div class="project-details">
+          <h3>Project 1</h3>
+          <p>Description of your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et est vel nunc tristique ullamcorper. Donec id tincidunt purus.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="project2.jpg" alt="Project 2">
+        <div class="project-details">
+          <h3>Project 2</h3>
+          <p>Description of another project. Sed tristique aliquam massa, vitae blandit neque viverra id. Proin ut ullamcorper lectus.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+      <!-- Add more projects here -->
+
+      <!-- Adding the interactive 3D cube -->
+      <div class="project">
+        <div class="cube-container" id="cube-container"></div>
+        <div class="project-details">
+          <h3>Interactive 3D Cube</h3>
+          <p>Create an interactive 3D cube using Three.js to showcase your technical skills and creativity.</p>
+          <a href="interactive-cube-demo.html" class="project-link" target="_blank">View Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="responseMessage"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
